@@ -21,8 +21,7 @@ const AppNavigator = createStackNavigator({
     [LOGIN]: Login,
     [HOME]: Home,
     [RESULTS]: Results,
-    [PROFILE]: Profile
-    
+    [PROFILE]: Profile   
 },
 {
     headerMode: 'none'
