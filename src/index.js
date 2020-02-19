@@ -6,6 +6,7 @@ import { Spinner } from 'native-base'
 
 import Routes from './routes'
 import Store from './redux/store'
+import { ROBOTO_FONT, ROBOTO_MEDIUM_FONT} from './const';
 
 const store = Store();
 const ROBOTO = require('../node_modules/native-base/Fonts/Roboto.ttf')
@@ -22,8 +23,8 @@ export default () => {
 
     const loadFonts = async () => {
         await Font.loadAsync({
-            'Roboto': ROBOTO,
-            'Roboto_medium': ROBOTO_MEDIUM
+            [ROBOTO_FONT] : ROBOTO,
+            [ROBOTO_MEDIUM_FONT]: ROBOTO_MEDIUM
         })
 
         setFontsLoaded(true)
